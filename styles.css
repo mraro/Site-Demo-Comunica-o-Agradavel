@@ -1,7 +1,5 @@
 /* Global Styles */
-*{
-    list-style: none;
-}
+
 li{
     font-size: 1.5rem;
 }
@@ -75,7 +73,7 @@ body {
     /* color: #EAD7C2; */
     margin: 0 10px;
     transition: color 0.3s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
 }
 
 .social-header a:hover {
@@ -93,12 +91,11 @@ body {
 /* Estilos específicos para cada rede social */
 
 /* Instagram */
-.fab.fa-instagram {
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
+.social-header a[aria-label="Instagram"] {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 .social-header a[aria-label="Instagram"]:hover {
@@ -240,9 +237,16 @@ body {
 }
 
 .new-section ul {
-    list-style: none;
+    list-style: inside;
     font-weight: bold;
-    padding-left: 40px;
+    /* padding-left: 40px; */
+    /* columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2; */
+
+}
+.new-section li {
+    /* width: 50%; */
 }
 
 .new-section p {
@@ -310,8 +314,6 @@ p{
 .copy{
     font-size: 1rem;
 }
-
-
 /* Media Queries */
 
 /* Tablet: telas com largura entre 768px e 1024px */
@@ -386,8 +388,21 @@ p{
         flex-direction: column;
         padding: 20px 15px;
         text-align: center;
-    }
 
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin: 0 auto;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    .hero p {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    
     /* Caso a imagem .hero-img seja utilizada */
     .hero-img {
         width: 100%;
@@ -411,12 +426,16 @@ p{
     /* Call to Action Section */
     .cta-section {
         width: 100%;
-        padding: 20px 15px;
+        padding: 20px 0px;
     }
-
+    .section{
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 1rem;
+    }
     .cta-section a {
         width: 100%;
-        margin: 10px 0;
+        margin:  1rem 0px;
     }
 
     /* Communication Problem Section */
@@ -446,11 +465,12 @@ p{
 
     .new-section ul {
         padding-left: 0;
-        text-align: left;
     }
 
     .new-section li {
         font-size: 1rem;
+        text-align: center;
+
     }
 
     /* Social Proof Section */
