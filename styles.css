@@ -236,7 +236,7 @@ body {
     font-size: 2.5rem;
 }
 
-.new-section ul {
+.new-section ul, .value-propositions ul {
     list-style: inside;
     font-weight: bold;
     /* padding-left: 40px; */
