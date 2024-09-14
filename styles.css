@@ -310,3 +310,195 @@ p{
 .copy{
     font-size: 1rem;
 }
+
+
+/* Media Queries */
+
+/* Tablet: telas com largura entre 768px e 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* Header */
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    /* Caso a imagem .hero-img seja utilizada */
+    .hero-img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Social Header */
+    .social-header {
+        position: static;
+        margin-top: 20px;
+        justify-content: center;
+        right: 0;
+    }
+
+    /* Subheadline Section */
+    .subheadline {
+        width: 80%;
+        padding: 40px 20px;
+    }
+
+    /* Call to Action Section */
+    .cta-section {
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    /* Communication Problem Section */
+    .communication-problem {
+        padding: 40px 20px;
+        max-width: 90%;
+    }
+
+    /* New Section */
+    .new-section {
+        padding: 40px 20px;
+        max-width: 90%;
+    }
+
+    /* Social Proof Section */
+    .social-proof blockquote {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    /* Value Propositions Section */
+    .value-propositions ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-propositions li {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* Mobile: telas com largura até 767px */
+@media (max-width: 767px) {
+    /* Header */
+    .hero {
+        flex-direction: column;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    /* Caso a imagem .hero-img seja utilizada */
+    .hero-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Social Header */
+    .social-header {
+        position: static;
+        margin: 10px 0;
+        justify-content: center;
+        font-size: 24px; /* Mantém o tamanho dos ícones */
+    }
+
+    /* Subheadline Section */
+    .subheadline {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    /* Call to Action Section */
+    .cta-section {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .cta-section a {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Communication Problem Section */
+    .communication-problem {
+        padding: 30px 15px;
+        max-width: 100%;
+    }
+
+    .communication-problem h2, 
+    .communication-problem h3 {
+        font-size: 2rem;
+    }
+
+    .communication-problem p {
+        font-size: 1rem;
+    }
+
+    /* New Section */
+    .new-section {
+        padding: 30px 15px;
+        max-width: 100%;
+    }
+
+    .new-section h2 {
+        font-size: 2rem;
+    }
+
+    .new-section ul {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .new-section li {
+        font-size: 1rem;
+    }
+
+    /* Social Proof Section */
+    .social-proof {
+        padding: 30px 15px;
+    }
+
+    .social-proof h3 {
+        font-size: 1.5rem;
+    }
+
+    .social-proof blockquote {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    /* Value Propositions Section */
+    .value-propositions {
+        padding: 30px 15px;
+    }
+
+    .value-propositions h3 {
+        font-size: 1.5rem;
+    }
+
+    .value-propositions ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-propositions li {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 10px;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .copy {
+        font-size: 1rem;
+    }
+}
