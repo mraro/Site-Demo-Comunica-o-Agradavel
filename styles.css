@@ -1,0 +1,312 @@
+/* Global Styles */
+*{
+    list-style: none;
+}
+li{
+    font-size: 1.5rem;
+}
+@font-face {
+    font-family: 'comfortaa';
+    src: url('comfortaa\\Comfortaa-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body {
+    font-family: 'comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 90em;
+    margin: 0 auto;
+    background: linear-gradient(170deg, #EAD7C2 0%, #967753 100%);
+    /* background: linear-gradient(180deg, #ffffff 0%, #C5BAAE 100%); */
+    color: #31475F;
+}
+
+/* Header */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(120deg, #56647300 0%, #31475f00 100%);
+    color: white;
+    padding: 40px;
+    position: relative;
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.hero-text {
+    /* max-width: 50%; */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+    margin: 0 auto;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.hero-img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-header {
+    position: fixed;
+    font-size: 28px;
+
+    top: 20px;
+    right: 15%;
+}
+
+.social-header a {
+    /* color: #EAD7C2; */
+    margin: 0 10px;
+    transition: color 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.social-header a:hover {
+    color: #FFD700;
+}
+
+/* Estilo para os links de redes sociais */
+.social-header a {
+    color: #333; /* Cor padrão para os ícones */
+    text-decoration: none;
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+/* Estilos específicos para cada rede social */
+
+/* Instagram */
+.fab.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+.social-header a[aria-label="Instagram"]:hover {
+    color: #b1354a; /* Cor mais escura no hover */
+}
+
+/* YouTube */
+.social-header a[aria-label="YouTube"] {
+    color: #ff0000; /* Cor característica do YouTube */
+}
+
+.social-header a[aria-label="YouTube"]:hover {
+    color: #cc0000; /* Cor mais escura no hover */
+}
+
+/* WhatsApp */
+.social-header a[aria-label="WhatsApp"] {
+    color: #25D366; /* Cor característica do WhatsApp */
+}
+
+.social-header a[aria-label="WhatsApp"]:hover {
+    color: #128C7E; /* Cor mais escura no hover */
+}
+/* Subheadline Section */
+.subheadline {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 50px;
+    background: rgba(250, 245, 240, 0.9);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.subheadline h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+}
+.subheadline h2,.subheadline p {
+    background: -webkit-linear-gradient(120deg, #56647386 0%, #31475F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Call to Action Section */
+.cta-section {
+    width: 70%;
+    background: rgba(245, 240, 235, 0.9);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    
+}
+
+.section{
+    background: rgba(255, 255, 255, 0.575);
+    margin: 1rem;
+    padding: 30px;
+    border-radius: 1rem;
+
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.603);
+}
+.cta-section a {
+    display: inline-block;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 20px;
+    color: #31475F;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s;
+}
+
+.cta-section a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #FFD700;
+}
+.cta-section h2 {
+    color: #31475F;
+    font-size: 2rem;
+}
+/* Redesigned Communication Problem Section */
+.communication-problem {
+    padding: 60px;
+    background: rgba(245, 240, 235, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.603);
+    /* margin: 10px auto; */
+    max-width: 95%;
+    text-align: center;
+}
+
+.communication-problem h2, 
+.communication-problem h3 {
+    color: #31475F;
+    font-size: 2.5rem;
+
+}
+
+.communication-problem p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.communication-problem mark {
+    background-color: #FFD57A; /* Cor suavizada */
+    padding: 3px;
+    border-radius: 4px;
+    color: #31475F;
+}
+
+.cta-final {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #31475F;
+    margin-top: 30px;
+}
+
+/* New Section */
+.new-section {
+    padding: 60px;
+    background: rgba(250, 245, 240, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.603);
+    margin-top: 30px;
+    max-width: 95%;
+    text-align: center;
+}
+
+.new-section h2 {
+    color: #31475F;
+    font-size: 2.5rem;
+}
+
+.new-section ul {
+    list-style: none;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.new-section p {
+    /* font-size: 1.2rem;
+    line-height: 1.7; */
+    margin-bottom: 20px;
+}
+
+/* Social Proof Section */
+.social-proof {
+    padding: 50px;
+    background: linear-gradient(170deg, #EAD7C2 0%, #c29869 100%);
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.social-proof blockquote {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #31475F;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.658);
+}
+
+/* Value Propositions Section */
+.value-propositions {
+    background: rgba(245, 240, 235, 0.9);
+    padding: 50px;
+    text-align: center;
+}
+
+.value-propositions ul {
+    margin-top: 20px;
+}
+
+.value-propositions li {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0C2A4B;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0C2A4B;
+    color: white;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #EAD7C2;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FFD700;
+}
+p{
+    font-size: 1.5rem;
+}
+.copy{
+    font-size: 1rem;
+}
